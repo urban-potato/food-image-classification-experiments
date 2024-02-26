@@ -13,11 +13,11 @@ def main(repo_path):
     # sgd = SGDClassifier(random_state=91, max_iter=100)
     # trained_model = sgd.fit(train_data, labels)
 
-    rf = RandomForestClassifier(random_state=91)
-    trained_model = rf.fit(train_data, labels)
+    # rf = RandomForestClassifier(random_state=91)
+    # trained_model = rf.fit(train_data, labels)
 
-    # svc = SVC(random_state=91)
-    # trained_model = svc.fit(train_data, labels)
+    svc = SVC(random_state=91)
+    trained_model = svc.fit(train_data, labels)
 
     dump(trained_model, repo_path / "model/model.joblib")
 
