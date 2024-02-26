@@ -117,8 +117,8 @@ def main(repo_path):
     test_files, test_labels = get_files_and_labels(test_path)
 
     # # ------------------------------------- aug -------------------------------------
-    # prepare_aug(train_path, train_files, train_labels, 500)
-    # train_files, train_labels = get_files_and_labels(train_path)
+    prepare_aug(train_path, train_files, train_labels, 500)
+    train_files, train_labels = get_files_and_labels(train_path)
     # # ------------------------------------- aug -------------------------------------
 
     save_as_csv(train_files, train_labels, prepared_path / "train.csv", True)
