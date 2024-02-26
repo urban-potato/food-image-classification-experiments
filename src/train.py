@@ -10,7 +10,7 @@ def main(repo_path):
     train_csv_path = repo_path / "data/prepared/train.csv"
     train_data, labels = load_data(train_csv_path)
 
-    sgd = SGDClassifier(random_state=91, max_iter=100)
+    sgd = SGDClassifier(random_state=91, max_iter=500)
     trained_model = sgd.fit(train_data, labels)
 
     # rf = RandomForestClassifier(

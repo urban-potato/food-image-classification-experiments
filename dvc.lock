@@ -5,7 +5,7 @@ stages:
     deps:
     - path: data/raw
       hash: md5
-      md5: 6d310d6658f08b230932dbd8c987330e.dir
+      md5: 217bd2ff6cab18b66b0b61060e23984b.dir
       size: 423032274
       nfiles: 5003
     - path: src/prepare.py
@@ -30,7 +30,7 @@ stages:
       size: 303954
     - path: data/raw
       hash: md5
-      md5: 6d310d6658f08b230932dbd8c987330e.dir
+      md5: 217bd2ff6cab18b66b0b61060e23984b.dir
       size: 423032274
       nfiles: 5003
     - path: src/loadData.py

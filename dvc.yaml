@@ -2,7 +2,8 @@ stages:
   prepare:
     cmd: python src/prepare.py
     deps:
-    - data/raw
+    - data/raw/train
+    - data/raw/val
     - src/prepare.py
     outs:
     - data/prepared/test.csv
@@ -11,7 +12,8 @@ stages:
     cmd: python src/train.py
     deps:
     - data/prepared/train.csv
-    - data/raw
+    - data/raw/train
+    - data/raw/val
     - src/train.py
     - src/loadData.py
     outs:
