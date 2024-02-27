@@ -3,11 +3,16 @@ stages:
   prepare:
     cmd: python src/prepare.py
     deps:
-    - path: data/raw
+    - path: data/raw/train
       hash: md5
-      md5: 6d310d6658f08b230932dbd8c987330e.dir
-      size: 423032274
-      nfiles: 5003
+      md5: 6fe18fb8eac8ad5d483e38cbca262368.dir
+      size: 288949782
+      nfiles: 4000
+    - path: data/raw/val
+      hash: md5
+      md5: 5a2083a0a05e8481cf990ceff89d0b62.dir
+      size: 134082264
+      nfiles: 1000
     - path: src/prepare.py
       hash: md5
       md5: 750cf63edbdf095731faa755c3050751
@@ -28,11 +33,16 @@ stages:
       hash: md5
       md5: e85753e603edcef467e1e05c2fac98ce
       size: 303954
-    - path: data/raw
+    - path: data/raw/train
       hash: md5
-      md5: 6d310d6658f08b230932dbd8c987330e.dir
-      size: 423032274
-      nfiles: 5003
+      md5: 6fe18fb8eac8ad5d483e38cbca262368.dir
+      size: 288949782
+      nfiles: 4000
+    - path: data/raw/val
+      hash: md5
+      md5: 5a2083a0a05e8481cf990ceff89d0b62.dir
+      size: 134082264
+      nfiles: 1000
     - path: src/loadData.py
       hash: md5
       md5: 1e525c6b80bcb69dd4143f1db97bf231
